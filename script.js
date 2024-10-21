@@ -7,8 +7,8 @@ function createYearSelector() {
         const button = document.createElement("button");
         button.innerHTML = `<i class="fas fa-graduation-cap mr-2"></i>Year ${year}`;
         button.className = `flex items-center px-3 py-3 rounded-lg font-semibold transition-all duration-300 ease-in-out transform hover:scale-105 focus:outline-none focus:ring-2 focus:ring-offset-2 ${
-            index === 0 ? "bg-blue-600 text-white" : "bg-gray-700 text-gray-300 hover:bg-gray-600"
-        }`;
+            index === 0 ? "bg-blue-600 text-white" : "bg-gray-700 text-gray-300"
+        } hover:bg-blue-600`;
         button.onclick = () => {
             showYearContent(year);
             updateYearSelector(year);
